@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page Title & Description -->
+    <title>Who We Serve & What We Do | CAPS Malawi - Target Groups & Programs</title>
+    <meta name="description" content="Discover CAPS Malawi's target groups and comprehensive programs addressing poverty, healthcare, education, agriculture, and human rights in Malawi.">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="CAPS Malawi - Who We Serve & What We Do">
+    <meta property="og:description" content="Supporting vulnerable communities through transformative programs in Malawi">
+    <meta property="og:image" content="/images/target-groups.jpg">
+    <meta property="og:url" content="https://caps-malawi.org/who-we-serve">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        secondary: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7e22ce',
+                            800: '#6b21a8',
+                            900: '#581c87',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'pulse-slow': 'pulse 3s infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                },
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <style>
+        * {
+            font-family: 'Nunito', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #2563eb, #7c3aed);
+        }
+        
+        /* Card Hover Effects */
+        .target-group-card, .program-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .target-group-card:hover, .program-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Stats Counter Animation */
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        /* Section Background Patterns */
+        .pattern-dots {
+            background-image: radial-gradient(#3b82f6 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.1;
+        }
+        
+        /* Loading Animation */
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+        .shimmer {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 1000px 100%;
+            animation: shimmer 2s infinite;
+        }
+        
+        /* Smooth Navigation Scroll */
+        html {
+            scroll-padding-top: 100px;
+        }
+        
+        /* Progress Bar Animation */
+        .progress-bar {
+            transition: width 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-lg">C</span>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-600">
+                                CAPS Malawi
+                            </h1>
+                            <p class="text-xs text-gray-500">Since 1999</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">About</a>
+                    <a href="who-we-serve.html" class="text-primary-600 font-medium border-b-2 border-primary-600">Who We Serve</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">Projects</a>
+                    <a href="index.html#get-involved" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">Get Involved</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">Contact</a>
+                    <a href="index.html#donate-section" class="px-6 py-2.5 bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        Donate Now
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">About</a>
+                <a href="who-we-serve.html" class="block py-2 text-primary-600 font-medium">Who We Serve</a>
+                <a href="projects.html" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">Projects</a>
+                <a href="index.html#get-involved" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">Get Involved</a>
+                <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">Contact</a>
+                <a href="index.html#donate-section" class="block w-full mt-4 py-3 bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-semibold rounded-full text-center">
+                    Donate Now
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-br from-primary-50 to-secondary-50 relative overflow-hidden">
+        <div class="pattern-dots absolute inset-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 via-secondary-500 to-pink-500">
+                        Who We Serve & What We Do
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Empowering Malawi's most vulnerable communities through comprehensive, transformative programs
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <a href="#target-groups" class="px-6 py-2.5 bg-primary-600 text-white font-medium rounded-full hover:bg-primary-700 transition-colors">Our Target Groups</a>
+                    <a href="#our-work" class="px-6 py-2.5 bg-white text-primary-600 font-medium rounded-full hover:bg-primary-50 transition-colors border border-primary-600">Our Programs</a>
+                    <a href="#impact" class="px-6 py-2.5 bg-white text-primary-600 font-medium rounded-full hover:bg-primary-50 transition-colors border border-primary-600">Our Impact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Target Groups Section -->
+    <section id="target-groups" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1.5 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4">
+                    Our Focus
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Who We Serve
+                </h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    We prioritize support for the most vulnerable communities across Malawi
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Women & Girls -->
+                <div class="target-group-card bg-gradient-to-br from-pink-50 to-white rounded-2xl p-8 border border-pink-100">
+                    <div class="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-female text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Women & Girls</h3>
+                    <p class="text-gray-600 mb-6">
+                        Women, adolescent girls, and young women empowerment programs including economic empowerment, education support, and gender-based violence prevention.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-pink-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Economic empowerment initiatives</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-pink-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Gender-based violence prevention</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-pink-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Maternal and reproductive health</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-pink-200">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Programs Reaching</span>
+                            <span class="text-lg font-bold text-pink-600">2,500+ Women</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Children -->
+                <div class="target-group-card bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-child text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Children</h3>
+                    <p class="text-gray-600 mb-6">
+                        Orphans and vulnerable children (OVCs) support and education through school fee assistance, nutrition programs, and psychosocial support.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">School fee and material support</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Nutrition and feeding programs</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Psychosocial counseling</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-blue-200">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Children Supported</span>
+                            <span class="text-lg font-bold text-blue-600">3,000+ Children</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Persons with Disabilities -->
+                <div class="target-group-card bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 border border-green-100">
+                    <div class="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-wheelchair text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Persons with Disabilities</h3>
+                    <p class="text-gray-600 mb-6">
+                        Inclusive programs and accessibility initiatives promoting equal opportunities, vocational training, and community integration.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-green-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Accessibility infrastructure</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-green-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Vocational skills training</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-green-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Advocacy and rights awareness</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-green-200">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Individuals Supported</span>
+                            <span class="text-lg font-bold text-green-600">800+ Persons</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Marginalized Groups -->
+                <div class="target-group-card bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 border border-purple-100">
+                    <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Marginalized Groups</h3>
+                    <p class="text-gray-600 mb-6">
+                        LGBTI community, MSM, prisoners, youth at risk, and commercial sex workers receive specialized support, counseling, and rights protection.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-purple-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Legal rights and protection</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-purple-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Health services and counseling</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-purple-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Social reintegration programs</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-purple-200">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Community Members</span>
+                            <span class="text-lg font-bold text-purple-600">1,200+ Individuals</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Government Partners -->
+                <div class="target-group-card bg-gradient-to-br from-yellow-50 to-white rounded-2xl p-8 border border-yellow-100">
+                    <div class="w-16 h-16 rounded-2xl bg-yellow-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Government Partners</h3>
+                    <p class="text-gray-600 mb-6">
+                        Collaboration with government departments and agencies for policy advocacy, resource sharing, and wider community impact.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-yellow-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Policy development support</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-yellow-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Joint program implementation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-yellow-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Capacity building initiatives</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-yellow-200">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Active Partnerships</span>
+                            <span class="text-lg font-bold text-yellow-600">15+ Agencies</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vulnerable Communities -->
+                <div class="target-group-card bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-8 border border-indigo-100">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-home text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Vulnerable Communities</h3>
+                    <p class="text-gray-600 mb-6">
+                        Poor and vulnerable communities across all regions of Malawi receive integrated support through holistic community development programs.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-indigo-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Integrated community development</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-indigo-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Livelihood and food security</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-indigo-500 mr-3"></div>
+                            <span class="text-sm text-gray-700">Infrastructure improvement</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-indigo-200">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-600">Communities Reached</span>
+                            <span class="text-lg font-bold text-indigo-600">50+ Communities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Impact Statistics -->
+    <section id="impact" class="py-20 bg-gradient-to-br from-primary-600 to-secondary-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Reach & Impact</h2>
+                <p class="text-primary-100 text-lg max-w-2xl mx-auto">
+                    Transforming lives across Malawi through targeted interventions
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 counter" data-target="10000">0</div>
+                    <div class="text-primary-200">Lives Impacted</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 counter" data-target="50">0</div>
+                    <div class="text-primary-200">Projects Completed</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 counter" data-target="15">0</div>
+                    <div class="text-primary-200">Districts Covered</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 counter" data-target="24">0</div>
+                    <div class="text-primary-200">Years of Service</div>
+                </div>
+            </div>
+            
+            <!-- Progress Bars -->
+            <div class="mt-16 space-y-6">
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-primary-100">Women & Girls Reached</span>
+                        <span class="text-white font-bold">2,500+</span>
+                    </div>
+                    <div class="w-full bg-primary-700 rounded-full h-3">
+                        <div class="bg-pink-500 h-3 rounded-full progress-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-primary-100">Children in Education Programs</span>
+                        <span class="text-white font-bold">3,000+</span>
+                    </div>
+                    <div class="w-full bg-primary-700 rounded-full h-3">
+                        <div class="bg-blue-500 h-3 rounded-full progress-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="text-primary-100">Persons with Disabilities Supported</span>
+                        <span class="text-white font-bold">800+</span>
+                    </div>
+                    <div class="w-full bg-primary-700 rounded-full h-3">
+                        <div class="bg-green-500 h-3 rounded-full progress-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Our Work Section -->
+    <section id="our-work" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1.5 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4">
+                    Our Programs
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    What We Do
+                </h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    Comprehensive programs addressing root causes of poverty and inequality across key sectors
+                </p>
+            </div>
+            
+            <!-- Health & Wellness -->
+            <div class="program-card mb-16 bg-white rounded-3xl overflow-hidden shadow-xl">
+                <div class="grid lg:grid-cols-2">
+                    <div class="p-8 md:p-12">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-14 h-14 rounded-xl bg-red-100 flex items-center justify-center">
+                                <i class="fas fa-heartbeat text-red-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">Health & Wellness Programs</h3>
+                                <p class="text-red-600 font-medium">Health & Wellness</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                            HIV/AIDS awareness campaigns, nutrition programs, clean water initiatives, and maternal health services. 
+                            We conduct community outreach, distribute preventive tools, and promote healthcare access in vulnerable areas.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">HIV/AIDS Prevention</h4>
+                                    <p class="text-gray-600 text-sm">Community awareness campaigns and distribution of preventive tools</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Maternal & Child Health</h4>
+                                    <p class="text-gray-600 text-sm">Prenatal care, nutrition support, and child immunization programs</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Clean Water & Sanitation</h4>
+                                    <p class="text-gray-600 text-sm">Borehole installation and hygiene promotion in rural communities</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="projects.html#health" class="inline-flex items-center px-6 py-3 bg-red-50 text-red-600 font-bold rounded-full hover:bg-red-100 transition-colors">
+                            <i class="fas fa-heartbeat mr-2"></i>
+                            Support Health Programs
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="relative min-h-[400px] lg:min-h-full">
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-100 to-pink-100 flex items-center justify-center">
+                            <i class="fas fa-stethoscope text-red-300 text-8xl"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+                            <p class="font-medium">Community health workers conducting HIV testing in Mzuzu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education & Skills Development -->
+            <div class="program-card mb-16 bg-white rounded-3xl overflow-hidden shadow-xl">
+                <div class="grid lg:grid-cols-2">
+                    <div class="relative min-h-[400px] lg:min-h-full order-2 lg:order-1">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-blue-300 text-8xl"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+                            <p class="font-medium">Students at a CAPS-supported Early Childhood Development center</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 md:p-12 order-1 lg:order-2">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center">
+                                <i class="fas fa-graduation-cap text-blue-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">Education & Skills Development</h3>
+                                <p class="text-blue-600 font-medium">Education & Skills</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                            Early childhood centers, vocational training, school support for OVCs, and adult education programs. 
+                            We enhance access to quality education and build skills for sustainable livelihoods.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Early Childhood Development</h4>
+                                    <p class="text-gray-600 text-sm">Establishing and supporting ECD centers in rural communities</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Vocational Training</h4>
+                                    <p class="text-gray-600 text-sm">Skills development in tailoring, carpentry, agriculture, and business</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">OVC School Support</h4>
+                                    <p class="text-gray-600 text-sm">School fees, uniforms, and learning materials for vulnerable children</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="projects.html#education" class="inline-flex items-center px-6 py-3 bg-blue-50 text-blue-600 font-bold rounded-full hover:bg-blue-100 transition-colors">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            Support Education
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Agriculture & Environment -->
+            <div class="program-card mb-16 bg-white rounded-3xl overflow-hidden shadow-xl">
+                <div class="grid lg:grid-cols-2">
+                    <div class="p-8 md:p-12">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center">
+                                <i class="fas fa-seedling text-green-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">Agriculture & Environment</h3>
+                                <p class="text-green-600 font-medium">Agriculture & Environment</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                            Sustainable farming practices, reforestation, climate resilience, and environmental protection programs. 
+                            We help communities combat deforestation and build climate-adaptive livelihoods.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Climate-Smart Agriculture</h4>
+                                    <p class="text-gray-600 text-sm">Training in drought-resistant crops and conservation farming</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Community Reforestation</h4>
+                                    <p class="text-gray-600 text-sm">Tree planting and environmental conservation initiatives</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Food Security Programs</h4>
+                                    <p class="text-gray-600 text-sm">Nutrition gardens and sustainable food production systems</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="projects.html#agriculture" class="inline-flex items-center px-6 py-3 bg-green-50 text-green-600 font-bold rounded-full hover:bg-green-100 transition-colors">
+                            <i class="fas fa-seedling mr-2"></i>
+                            Support Environment
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="relative min-h-[400px] lg:min-h-full">
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center">
+                            <i class="fas fa-tractor text-green-300 text-8xl"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+                            <p class="font-medium">Farmers receiving training in climate-resilient agriculture techniques</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Human Rights & Social Empowerment -->
+            <div class="program-card bg-white rounded-3xl overflow-hidden shadow-xl">
+                <div class="grid lg:grid-cols-2">
+                    <div class="relative min-h-[400px] lg:min-h-full order-2 lg:order-1">
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center">
+                            <i class="fas fa-balance-scale text-purple-300 text-8xl"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white">
+                            <p class="font-medium">Human rights workshop with community leaders in Lilongwe</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 md:p-12 order-1 lg:order-2">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center">
+                                <i class="fas fa-balance-scale text-purple-600 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">Human Rights & Social Empowerment</h3>
+                                <p class="text-purple-600 font-medium">Human Rights</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                            Gender equality advocacy, protection for vulnerable groups, and counseling services. 
+                            We foster inclusive societies through rights-based approaches and community empowerment.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Gender Equality Programs</h4>
+                                    <p class="text-gray-600 text-sm">Advocacy, awareness campaigns, and women's leadership training</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">GBV Prevention & Response</h4>
+                                    <p class="text-gray-600 text-sm">Counseling, legal support, and safe spaces for survivors</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Rights Advocacy</h4>
+                                    <p class="text-gray-600 text-sm">Protection and empowerment of marginalized communities</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="projects.html#rights" class="inline-flex items-center px-6 py-3 bg-purple-50 text-purple-600 font-bold rounded-full hover:bg-purple-100 transition-colors">
+                            <i class="fas fa-balance-scale mr-2"></i>
+                            Support Human Rights
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How We Work -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How We Work</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Our approach to creating sustainable change in communities
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-primary-100 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-search text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Community Assessment</h3>
+                    <p class="text-gray-600">
+                        We conduct participatory needs assessments to understand community priorities and challenges.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users-cog text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Co-Design</h3>
+                    <p class="text-gray-600">
+                        Programs are developed in partnership with community members to ensure relevance and ownership.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Partnership</h3>
+                    <p class="text-gray-600">
+                        We collaborate with government, NGOs, and local organizations to maximize impact and resources.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Monitoring & Evaluation</h3>
+                    <p class="text-gray-600">
+                        Continuous tracking ensures program effectiveness and allows for adaptive management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-br from-primary-600 to-secondary-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Join Us in Making a Difference</h2>
+            <p class="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
+                Support our work with vulnerable communities and help us create lasting change across Malawi.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#donate-section" class="px-8 py-3.5 bg-white text-primary-600 font-bold rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <i class="fas fa-donate mr-2"></i>
+                    Donate Now
+                </a>
+                <a href="index.html#get-involved" class="px-8 py-3.5 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white/10 transition-all">
+                    <i class="fas fa-hands-helping mr-2"></i>
+                    Get Involved
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">C</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">CAPS Malawi</h3>
+                            <p class="text-gray-400 text-sm">Since 1999</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Centre Against Poverty and Social Problems. Empowering communities, 
+                        transforming lives across Malawi through sustainable development initiatives.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="who-we-serve.html" class="text-gray-400 hover:text-white transition-colors">Who We Serve</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Info</h4>
+                    <div class="space-y-3">
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            MCP premises, next to Mzuzu ADD
+                        </p>
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-envelope mr-2"></i>
+                            info@caps-malawi.org
+                        </p>
+                        <p class="text-gray-400 text-sm">
+                            <i class="fas fa-phone mr-2"></i>
+                            +265 123 456 789
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 CAPS Malawi. All rights reserved.</p>
+                <p class="mt-2 text-sm">Registered Non-Profit Organization | Mzuzu, Malawi</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" 
+            class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-br from-primary-600 to-secondary-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all opacity-0 invisible z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Calculate scroll position (accounting for fixed navbar)
+                    const navbarHeight = document.getElementById('main-nav').offsetHeight;
+                    const targetPosition = targetElement.offsetTop - navbarHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Animated Counter
+        function animateCounter() {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200; // The lower the faster
+            
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText.replace('+', '');
+                    
+                    // Check if target is reached
+                    if (count < target) {
+                        // Add inc depending on speed
+                        const inc = Math.ceil(target / speed);
+                        
+                        // Check if we've exceeded the target
+                        if (count + inc > target) {
+                            counter.innerText = target + (counter.textContent.includes('+') ? '+' : '');
+                        } else {
+                            counter.innerText = count + inc + (counter.textContent.includes('+') ? '+' : '');
+                        }
+                        
+                        // Call function every ms
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target + (counter.textContent.includes('+') ? '+' : '');
+                    }
+                };
+                
+                updateCount();
+            });
+        }
+        
+        // Animate progress bars on scroll
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0%';
+                
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+        }
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.classList.remove('shadow-md');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.add('shadow-md');
+            }
+        });
+        
+        // Card hover animations
+        document.querySelectorAll('.target-group-card, .program-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set current year in footer
+            const yearElement = document.querySelector('footer p:first-of-type');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2024', currentYear);
+            }
+            
+            // Add loading animation to any missing images
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('error', function() {
+                    this.classList.add('shimmer');
+                });
+            });
+            
+            // Start animations when page loads
+            setTimeout(() => {
+                animateCounter();
+                animateProgressBars();
+            }, 500);
+            
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (entry.target.classList.contains('counter')) {
+                            animateCounter();
+                        }
+                        if (entry.target.classList.contains('progress-bar')) {
+                            animateProgressBars();
+                        }
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements
+            document.querySelectorAll('.counter, .progress-bar').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

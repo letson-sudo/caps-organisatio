@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Verification -->
+    <meta name="google-site-verification" content="EkHHajOOwHDl9LUj0Ofoic11cuVnrlQXeOhSojfKVUg">
+    
+    <!-- Page Title & Description -->
+    <title>CAPS Malawi | Centre Against Poverty and Social Problems</title>
+    <meta name="description" content="CAPS Malawi works to empower communities through education, healthcare, and sustainable development initiatives.">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="CAPS Malawi | Community Empowerment">
+    <meta property="og:description" content="Empowering Malawian communities through sustainable development since 1999">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="og:url" content="https://caps-malawi.org">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        secondary: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7e22ce',
+                            800: '#6b21a8',
+                            900: '#581c87',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'pulse-slow': 'pulse 3s infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                },
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <style>
+        * {
+            font-family: 'Nunito', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #2563eb, #7c3aed);
+        }
+        
+        /* Hero Gradient Background */
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+        }
+        
+        /* Section Animation */
+        .section-animate {
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        /* Card Hover Effects */
+        .hover-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Donation Progress */
+        .progress-bar {
+            height: 8px;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            transition: width 1s ease-in-out;
+        }
+        
+        /* Loading Animation */
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+        .shimmer {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 1000px 100%;
+            animation: shimmer 2s infinite;
+        }
+    </style>
+</head>
+<body class="antialiased bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center shadow-lg">
+                        <span class="text-white font-bold text-lg">C</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-600">
+                            CAPS Malawi
+                        </h1>
+                        <p class="text-xs text-gray-500">Since 1999</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">What We Do</a>
+                    <a href="#impact" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">Impact</a>
+                    <a href="#get-involved" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">Get Involved</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">Contact</a>
+                    <button class="px-6 py-2.5 bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        Donate Now
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">Home</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">About</a>
+                <a href="#services" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">What We Do</a>
+                <a href="#impact" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">Impact</a>
+                <a href="#get-involved" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">Get Involved</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-primary-600 font-medium">Contact</a>
+                <button class="w-full mt-4 py-3 bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-semibold rounded-full">
+                    Donate Now
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 hero-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-8">
+                <div class="animate-fade-in">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-4">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 via-secondary-500 to-pink-500">
+                            Centre Against Poverty
+                        </span>
+                    </h1>
+                    <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-6">
+                        And Social Problems
+                    </h2>
+                </div>
+                
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+                    Empowering marginalized communities across Malawi through sustainable development, 
+                    education, and healthcare initiatives since 1999.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.2s">
+                    <button class="px-8 py-3.5 bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-bold rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        Support Our Mission
+                    </button>
+                    <button class="px-8 py-3.5 border-2 border-primary-600 text-primary-600 font-bold rounded-full hover:bg-primary-50 transition-all duration-300">
+                        Learn More
+                    </button>
+                </div>
+                
+                <!-- Impact Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 animate-slide-up" style="animation-delay: 0.4s">
+                    <div class="text-center p-4">
+                        <div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">24+</div>
+                        <div class="text-gray-600">Years of Service</div>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">50+</div>
+                        <div class="text-gray-600">Projects Completed</div>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">10k+</div>
+                        <div class="text-gray-600">Lives Impacted</div>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">10</div>
+                        <div class="text-gray-600">Dedicated Volunteers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Image -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
+        <div class="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+            <div class="relative h-64 md:h-80">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary-500/20 to-secondary-500/20 z-10"></div>
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                     alt="Community Empowerment in Malawi"
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 z-20">
+                    <p class="text-white text-lg md:text-xl font-semibold">
+                        The Budala Women's Group - Empowering each other through sustainable economic initiatives
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div>
+                        <span class="inline-block px-4 py-1.5 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4">
+                            About Us
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Building a Brighter Future for Malawi Since 1999
+                        </h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Founded by visionary students from the University of Malawi, CAPS is a dynamic non-profit 
+                            organization committed to eradicating poverty and tackling social challenges across Malawi.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-primary-600 text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">We partner with government agencies, civil society, and local communities</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-primary-600 text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">Focus on health, education, agriculture, environment, and human rights</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-primary-600 text-xs"></i>
+                            </div>
+                            <p class="text-gray-700">Transforming lives for over two decades through grassroots-driven initiatives</p>
+                        </div>
+                    </div>
+                    
+                    <button class="mt-4 px-6 py-3 bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        Read Our Story
+                    </button>
+                </div>
+                
+                <div class="relative">
+                    <div class="rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                             alt="CAPS Malawi Team"
+                             class="w-full h-80 object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-56 h-56 bg-gradient-to-br from-secondary-500 to-primary-500 rounded-2xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Vision & Mission -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Vision Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-card border border-primary-100">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-primary-100 flex items-center justify-center">
+                            <i class="fas fa-eye text-primary-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Our Vision</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        A vibrant Malawi where every individual and community flourishes, free from the grips of poverty, 
+                        inequality, and social injustice, achieving sustainable prosperity for all.
+                    </p>
+                </div>
+                
+                <!-- Mission Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-card border border-secondary-100">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-secondary-100 flex items-center justify-center">
+                            <i class="fas fa-bullseye text-secondary-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Our Mission</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        To empower marginalized Malawians by advancing access to education, health services, 
+                        sustainable livelihoods, and human rights through collaborative projects and community-led 
+                        efforts that build equity and resilience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Core Values -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block px-4 py-1.5 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4">
+                    Our Values
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Guiding Principles
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    The foundation of everything we do at CAPS Malawi
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Value 1 -->
+                <div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-6 hover-card border border-primary-100">
+                    <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-primary-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Integrity & Ethics</h4>
+                    <p class="text-gray-600">
+                        Committing to transparency and honesty in all our operations and partnerships.
+                    </p>
+                </div>
+                
+                <!-- Value 2 -->
+                <div class="bg-gradient-to-br from-secondary-50 to-white rounded-2xl p-6 hover-card border border-secondary-100">
+                    <div class="w-12 h-12 rounded-xl bg-secondary-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-secondary-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Inclusion</h4>
+                    <p class="text-gray-600">
+                        Ensuring every voice is heard, regardless of background, ability, or identity.
+                    </p>
+                </div>
+                
+                <!-- Value 3 -->
+                <div class="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-6 hover-card border border-pink-100">
+                    <div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-handshake text-pink-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Community Empowerment</h4>
+                    <p class="text-gray-600">
+                        Equipping individuals with tools for self-reliance and sustainable growth.
+                    </p>
+                </div>
+                
+                <!-- Value 4 -->
+                <div class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-6 hover-card border border-green-100">
+                    <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-green-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Transparency</h4>
+                    <p class="text-gray-600">
+                        Holding ourselves and partners to the highest standards for impactful results.
+                    </p>
+                </div>
+                
+                <!-- Value 5 -->
+                <div class="bg-gradient-to-br from-emerald-50 to-white rounded-2xl p-6 hover-card border border-emerald-100">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-emerald-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Sustainability</h4>
+                    <p class="text-gray-600">
+                        Prioritizing long-term solutions that protect people and the planet.
+                    </p>
+                </div>
+                
+                <!-- Value 6 -->
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 hover-card border border-blue-100">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-blue-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Compassion</h4>
+                    <p class="text-gray-600">
+                        Serving with empathy and understanding for the communities we work with.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What We Do / Services -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1.5 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4">
+                    Our Work
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    What We Do
+                </h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    Comprehensive programs addressing root causes of poverty and inequality across key sectors
+                </p>
+            </div>
+            
+            <!-- Services Tabs -->
+            <div class="mb-8">
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button class="service-tab active px-6 py-3 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-semibold" data-tab="health">
+                        Health & Wellness
+                    </button>
+                    <button class="service-tab px-6 py-3 bg-gray-200 text-gray-700 rounded-full font-semibold hover:bg-gray-300" data-tab="education">
+                        Education
+                    </button>
+                    <button class="service-tab px-6 py-3 bg-gray-200 text-gray-700 rounded-full font-semibold hover:bg-gray-300" data-tab="agriculture">
+                        Agriculture & Environment
+                    </button>
+                    <button class="service-tab px-6 py-3 bg-gray-200 text-gray-700 rounded-full font-semibold hover:bg-gray-300" data-tab="rights">
+                        Human Rights
+                    </button>
+                </div>
+                
+                <!-- Health Tab Content -->
+                <div id="health-tab" class="service-content active">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-900 mb-6">Health & Wellness Programs</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                We conduct HIV/AIDS awareness campaigns, distribute preventive tools like condoms, 
+                                and promote nutrition, clean water, and sanitation in vulnerable areas. Our health 
+                                initiatives are designed to reduce stigma and improve access to essential services.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-plus-circle text-green-500"></i>
+                                    <span>HIV/AIDS prevention and awareness</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-plus-circle text-green-500"></i>
+                                    <span>Nutrition and clean water initiatives</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-plus-circle text-green-500"></i>
+                                    <span>Maternal and child health programs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1516549655669-df166d7dfb46?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                 alt="Health & Wellness"
+                                 class="w-full h-80 object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education Tab Content -->
+                <div id="education-tab" class="service-content hidden">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 lg:order-1">
+                            <h3 class="text-3xl font-bold text-gray-900 mb-6">Education & Skills Development</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Supporting orphans, vulnerable children, women, and persons with disabilities through 
+                                access to quality education, Early Childhood Development centers, and vocational training 
+                                programs that build brighter futures.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-graduation-cap text-blue-500"></i>
+                                    <span>Early Childhood Development centers</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-tools text-blue-500"></i>
+                                    <span>Vocational and entrepreneurship training</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-book text-blue-500"></i>
+                                    <span>School support for OVCs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                 alt="Education"
+                                 class="w-full h-80 object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Agriculture Tab Content -->
+                <div id="agriculture-tab" class="service-content hidden">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-900 mb-6">Agriculture & Environment</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                We advance sustainable farming, climate-resilient livelihoods, environmental protection, 
+                                reforestation, and land rehabilitation, helping communities combat deforestation and 
+                                climate-related disasters.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-seedling text-green-500"></i>
+                                    <span>Sustainable farming practices</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-tree text-green-500"></i>
+                                    <span>Reforestation and land rehabilitation</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-tint text-green-500"></i>
+                                    <span>Water conservation initiatives</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                 alt="Agriculture"
+                                 class="w-full h-80 object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rights Tab Content -->
+                <div id="rights-tab" class="service-content hidden">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 lg:order-1">
+                            <h3 class="text-3xl font-bold text-gray-900 mb-6">Human Rights & Social Empowerment</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Advocating for marginalized groups, we offer counseling for abuse victims, promote 
+                                gender equality, and fight gender-based violence, fostering inclusive societies 
+                                through rights-based approaches.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-balance-scale text-purple-500"></i>
+                                    <span>Gender equality advocacy</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-shield-alt text-purple-500"></i>
+                                    <span>Protection for vulnerable groups</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-comments text-purple-500"></i>
+                                    <span>Counseling and support services</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
+                            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                 alt="Human Rights"
+                                 class="w-full h-80 object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Target Groups -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block px-4 py-1.5 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4">
+                    Who We Serve
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Our Target Groups
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    We prioritize support for the most vulnerable communities across Malawi
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 hover-card border border-blue-100">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+                            <i class="fas fa-female text-blue-600"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900">Women & Girls</h4>
+                    </div>
+                    <p class="text-gray-600">Women, adolescent girls, and young women empowerment programs</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-6 hover-card border border-purple-100">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center">
+                            <i class="fas fa-child text-purple-600"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900">Children</h4>
+                    </div>
+                    <p class="text-gray-600">Orphans and vulnerable children (OVCs) support and education</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-white rounded-2xl p-6 hover-card border border-green-100">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
+                            <i class="fas fa-wheelchair text-green-600"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900">Persons with Disabilities</h4>
+                    </div>
+                    <p class="text-gray-600">Inclusive programs and accessibility initiatives</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-6 hover-card border border-pink-100">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-pink-100 flex items-center justify-center">
+                            <i class="fas fa-users text-pink-600"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900">Marginalized Groups</h4>
+                    </div>
+                    <p class="text-gray-600">LGBTI community, MSM, prisoners, youth at risk, and sex workers</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-yellow-50 to-white rounded-2xl p-6 hover-card border border-yellow-100">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-yellow-100 flex items-center justify-center">
+                            <i class="fas fa-hands-helping text-yellow-600"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900">Government Partners</h4>
+                    </div>
+                    <p class="text-gray-600">Collaboration with government departments for wider impact</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-6 hover-card border border-indigo-100">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center">
+                            <i class="fas fa-home text-indigo-600"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900">Vulnerable Communities</h4>
+                    </div>
+                    <p class="text-gray-600">Poor and vulnerable communities across all regions of Malawi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Get Involved -->
+    <section id="get-involved" class="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1.5 bg-white text-primary-600 rounded-full text-sm font-semibold mb-4">
+                    Join Us
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Get Involved
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Join our mission to create a poverty-free Malawi. Every contribution makes a difference.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Volunteer -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-card">
+                    <div class="w-16 h-16 rounded-xl bg-blue-100 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-hands-helping text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Volunteer</h3>
+                    <p class="text-gray-600 mb-6 text-center">
+                        Join our passionate team and contribute to health campaigns, education programs, 
+                        and community projects that make a real difference.
+                    </p>
+                    <button class="w-full py-3 bg-blue-100 text-blue-600 font-semibold rounded-full hover:bg-blue-200 transition-colors">
+                        Join Our Team
+                    </button>
+                </div>
+                
+                <!-- Partner -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-card">
+                    <div class="w-16 h-16 rounded-xl bg-purple-100 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-handshake text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Partner</h3>
+                    <p class="text-gray-600 mb-6 text-center">
+                        We collaborate with government, NGOs, donors, and communities to amplify impact. 
+                        Current partners include ILGA, CHRR, and CISEC.
+                    </p>
+                    <button class="w-full py-3 bg-purple-100 text-purple-600 font-semibold rounded-full hover:bg-purple-200 transition-colors">
+                        Partner With Us
+                    </button>
+                </div>
+                
+                <!-- Donate -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-card">
+                    <div class="w-16 h-16 rounded-xl bg-green-100 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-donate text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Donate</h3>
+                    <p class="text-gray-600 mb-6 text-center">
+                        Your contributions fuel our work in education, health, and sustainability. 
+                        We rely on donations to continue our mission.
+                    </p>
+                    <button class="w-full py-3 bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-semibold rounded-full hover:shadow-lg">
+                        Donate Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Donation Section -->
+    <section id="donate" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-3xl p-8 md:p-12 shadow-xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        Support Our Mission
+                    </h2>
+                    <p class="text-gray-600 text-lg">
+                        Your donation helps us continue our work in education, healthcare, and community empowerment
+                    </p>
+                </div>
+                
+                <!-- Donation Amounts -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+                    <button class="donation-amount py-6 bg-white rounded-2xl border-2 border-primary-200 hover:border-primary-500 hover:shadow-lg transition-all"
+                            data-amount="5000">
+                        <div class="text-2xl font-bold text-primary-600 mb-2">MK 5,000</div>
+                        <div class="text-gray-600 text-sm">Supports one child's education</div>
+                    </button>
+                    
+                    <button class="donation-amount py-6 bg-white rounded-2xl border-2 border-primary-200 hover:border-primary-500 hover:shadow-lg transition-all"
+                            data-amount="25000">
+                        <div class="text-2xl font-bold text-primary-600 mb-2">MK 25,000</div>
+                        <div class="text-gray-600 text-sm">Provides healthcare for a family</div>
+                    </button>
+                    
+                    <button class="donation-amount py-6 bg-white rounded-2xl border-2 border-primary-200 hover:border-primary-500 hover:shadow-lg transition-all"
+                            data-amount="custom">
+                        <div class="text-2xl font-bold text-primary-600 mb-2">Custom</div>
+                        <div class="text-gray-600 text-sm">Choose your amount</div>
+                    </button>
+                </div>
+                
+                <!-- Custom Amount -->
+                <div id="custom-amount" class="hidden mb-8">
+                    <label class="block text-gray-700 mb-2 font-medium">Enter custom amount (MK)</label>
+                    <div class="flex">
+                        <input type="number" 
+                               id="custom-donation"
+                               class="flex-grow px-4 py-3 rounded-l-2xl border-2 border-r-0 border-primary-200 focus:outline-none focus:border-primary-500"
+                               placeholder="Enter amount">
+                        <button id="custom-donate-btn" class="px-6 bg-primary-600 text-white rounded-r-2xl font-semibold">
+                            Donate
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Bank Details -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bank Transfer Details</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <div class="space-y-3">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Bank:</span>
+                                    <span class="font-medium">National Bank of Malawi</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Account Name:</span>
+                                    <span class="font-medium">CAPS Malawi</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Account Number:</span>
+                                    <span class="font-medium">1000 1234 5678</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Branch:</span>
+                                    <span class="font-medium">Mzuzu</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-primary-600 mb-2">MK 2M+</div>
+                                <div class="text-gray-600">Annual member donations</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <div class="mb-10">
+                        <span class="inline-block px-4 py-1.5 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4">
+                            Contact
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Get In Touch
+                        </h2>
+                        <p class="text-gray-600">
+                            We'd love to hear from you. Reach out for partnerships, volunteer opportunities, 
+                            or any questions about our work.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <!-- Address -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 mb-1">Registered Office</h4>
+                                <p class="text-gray-600">MCP premises, next to Mzuzu ADD</p>
+                                <p class="text-gray-600">Mzuzu, Malawi</p>
+                                <p class="text-gray-500 text-sm">P.O. Box 211, Mzuzu, Malawi</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 mb-1">Email Address</h4>
+                                <a href="mailto:info@caps-malawi.org" class="text-primary-600 hover:text-primary-700 font-medium">
+                                    info@caps-malawi.org
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Phone -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 mb-1">Phone</h4>
+                                <a href="tel:+265123456789" class="text-primary-600 hover:text-primary-700 font-medium">
+                                    +265 123 456 789
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="mt-10">
+                        <h4 class="text-lg font-bold text-gray-900 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 hover:bg-sky-200">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-200">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 hover:bg-blue-200">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-medium">Your Name</label>
+                            <input type="text" 
+                                   class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-200"
+                                   placeholder="Enter your name"
+                                   required>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-medium">Email Address</label>
+                            <input type="email" 
+                                   class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-200"
+                                   placeholder="your.email@example.com"
+                                   required>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-medium">Subject</label>
+                            <input type="text" 
+                                   class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-200"
+                                   placeholder="How can we help?">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2 font-medium">Message</label>
+                            <textarea rows="5" 
+                                      class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-200"
+                                      placeholder="Your message here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full py-3.5 bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-bold rounded-xl hover:shadow-lg transition-all">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">C</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">CAPS Malawi</h3>
+                            <p class="text-gray-400 text-sm">Since 1999</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Centre Against Poverty and Social Problems. Empowering communities, 
+                        transforming lives across Malawi through sustainable development initiatives.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">What We Do</a></li>
+                        <li><a href="#get-involved" class="text-gray-400 hover:text-white transition-colors">Get Involved</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Stay Updated</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates</p>
+                    <div class="flex">
+                        <input type="email" 
+                               placeholder="Your email"
+                               class="flex-grow px-4 py-2 rounded-l-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-primary-500">
+                        <button class="px-4 bg-primary-600 rounded-r-lg hover:bg-primary-700">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 CAPS Malawi. All rights reserved.</p>
+                <p class="mt-2 text-sm">Registered Non-Profit Organization | Mzuzu, Malawi</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" 
+            class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-br from-primary-600 to-secondary-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all opacity-0 invisible z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Services Tabs
+        const serviceTabs = document.querySelectorAll('.service-tab');
+        const serviceContents = document.querySelectorAll('.service-content');
+        
+        serviceTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                serviceTabs.forEach(t => t.classList.remove('active', 'bg-gradient-to-r', 'from-primary-600', 'to-secondary-600', 'text-white'));
+                serviceTabs.forEach(t => t.classList.add('bg-gray-200', 'text-gray-700'));
+                
+                // Hide all content
+                serviceContents.forEach(content => content.classList.add('hidden'));
+                
+                // Add active class to clicked tab
+                tab.classList.remove('bg-gray-200', 'text-gray-700');
+                tab.classList.add('active', 'bg-gradient-to-r', 'from-primary-600', 'to-secondary-600', 'text-white');
+                
+                // Show corresponding content
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(`${tabId}-tab`).classList.remove('hidden');
+            });
+        });
+        
+        // Donation Amount Selection
+        const donationAmounts = document.querySelectorAll('.donation-amount');
+        const customAmountDiv = document.getElementById('custom-amount');
+        
+        donationAmounts.forEach(amount => {
+            amount.addEventListener('click', () => {
+                // Remove selected style from all
+                donationAmounts.forEach(a => {
+                    a.classList.remove('border-primary-500', 'shadow-lg', 'bg-primary-50');
+                    a.classList.add('border-primary-200');
+                });
+                
+                // Add selected style to clicked
+                amount.classList.remove('border-primary-200');
+                amount.classList.add('border-primary-500', 'shadow-lg', 'bg-primary-50');
+                
+                // Show custom amount input if selected
+                if (amount.getAttribute('data-amount') === 'custom') {
+                    customAmountDiv.classList.remove('hidden');
+                } else {
+                    customAmountDiv.classList.add('hidden');
+                    const selectedAmount = amount.getAttribute('data-amount');
+                    alert(`Thank you for choosing to donate MK ${selectedAmount}! Bank details are provided below.`);
+                }
+            });
+        });
+        
+        // Custom Donation
+        const customDonateBtn = document.getElementById('custom-donate-btn');
+        customDonateBtn.addEventListener('click', () => {
+            const amount = document.getElementById('custom-donation').value;
+            if (amount && amount > 0) {
+                alert(`Thank you for your generous donation of MK ${amount}! Bank details are provided below.`);
+            } else {
+                alert('Please enter a valid donation amount.');
+            }
+        });
+        
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Contact Form Submission
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
+        
+        // Navigation Scroll
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add hover effect to cards on load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize first service tab as active
+            document.querySelector('.service-tab').click();
+            
+            // Add loading animation to images
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.classList.remove('shimmer');
+                });
+                
+                if (!img.complete) {
+                    img.classList.add('shimmer');
+                }
+            });
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.classList.remove('shadow-md');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.add('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
